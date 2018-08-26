@@ -1,4 +1,4 @@
-# `"colorlover"` - Get palettes from colourlovers.com
+# `colorlover` - Get palettes from colourlovers.com
 
 SYNOPSIS
 --------

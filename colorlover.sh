@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 __name="colorlover"
-__version="0.005"
+__version="0.006"
 __author="budRich"
 __contact='robstenklippa@gmail.com'
 __created="2018-08-25"
@@ -234,7 +234,7 @@ setfromurl(){
 }
 
 printinfo(){
-about='`"colorlover"` - Get palettes from colourlovers.com
+about='`colorlover` - Get palettes from colourlovers.com
 
 SYNOPSIS
 --------
