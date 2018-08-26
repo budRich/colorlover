@@ -6,10 +6,15 @@
 .SH SYNOPSIS
 .PP
 \fB\fCcolorlover\fR [\fB\fC\-f\fR|\fB\fC\-\-foreground\fR FG\_COLOR] [\fB\fC\-b\fR|\fB\fC\-\-background\fR BG\_COLOR] [ID|URL|THEME]
+.br
 \fB\fCcolorlover\fR \fB\fC\-r\fR|\fB\fC\-\-random\fR [\fB\fC\-f\fR|\fB\fC\-\-foreground\fR FG\_COLOR] [\fB\fC\-b\fR|\fB\fC\-\-background\fR BG\_COLOR]
+.br
 \fB\fCcolorlover\fR \fB\fC\-c\fR|\fB\fC\-\-current\fR
+.br
 \fB\fCcolorlover\fR \fB\fC\-l\fR|\fB\fC\-\-list\fR
+.br
 \fB\fCcolorlover\fR \fB\fC\-v\fR|\fB\fC\-\-version\fR
+.br
 \fB\fCcolorlover\fR \fB\fC\-h\fR|\fB\fC\-\-help\fR
 
 .SH DESCRIPTION
@@ -33,6 +38,7 @@ get applied.
 .SH OPTIONS
 .PP
 \fB\fC\-f\fR|\fB\fC\-\-foreground\fR FG\_COLOR
+.br
 Sets the foreground color to FG\_COLOR.
 .br
 FG\_COLOR will also get applied to color7 and color15.
@@ -40,6 +46,7 @@ FG\_COLOR is a 6 character long hexadecimal colorcode.
 
 .PP
 \fB\fC\-b\fR|\fB\fC\-\-background\fR BG\_COLOR
+.br
 Sets the background color to BG\_COLOR.
 .br
 BG\_COLOR will also get applied to color0 and color8.
@@ -47,24 +54,29 @@ BG\_COLOR is a 6 character long hexadecimal colorcode.
 
 .PP
 \fB\fC\-r\fR|\fB\fC\-\-random\fR
+.br
 If set a 6 digit ID number will get generated and
 the palette with that ID will get downloaded, set
 and saved.
 
 .PP
 \fB\fC\-c\fR|\fB\fC\-\-current\fR
+.br
 Prints the path to the last set theme to \fB\fCstdout\fR
 
 .PP
 \fB\fC\-l\fR|\fB\fC\-\-list\fR
+.br
 Prints a list of the content of \fICOLOR\_LOVER\_DIR\fP
 
 .PP
 \fB\fC\-v\fR|\fB\fC\-\-version\fR
+.br
 Print version and exit.
 
 .PP
 \fB\fC\-h\fR|\fB\fC\-\-help\fR
+.br
 Print help (this) and exit.
 
 .SH FILES
@@ -87,6 +99,7 @@ Default: \fI$HOME/.config/colorlover\fP
 
 .PP
 COLOR\_LOVER\_TMP\_FILE
+.br
 Temporary file where the top palettes get downloaded to.
 .br
 Defaul: /tmp/cl\fB\fCYY\-MM\-DD\fR\&.xml

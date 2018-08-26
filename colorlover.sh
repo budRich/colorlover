@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 __name="colorlover"
-__version="0.002"
+__version="0.004"
 __author="budRich"
 __contact='robstenklippa@gmail.com'
 __created="2018-08-25"
@@ -238,12 +238,12 @@ about='`"colorlover"` - Get palettes from colourlovers.com
 
 SYNOPSIS
 --------
-`colorlover` [`-f`|`--foreground` FG_COLOR] [`-b`|`--background` BG_COLOR] [ID|URL|THEME]
-`colorlover` `-r`|`--random` [`-f`|`--foreground` FG_COLOR] [`-b`|`--background` BG_COLOR]
-`colorlover` `-c`|`--current`
-`colorlover` `-l`|`--list`
-`colorlover` `-v`|`--version`
-`colorlover` `-h`|`--help`
+`colorlover` [`-f`|`--foreground` FG_COLOR] [`-b`|`--background` BG_COLOR] [ID|URL|THEME]  
+`colorlover` `-r`|`--random` [`-f`|`--foreground` FG_COLOR] [`-b`|`--background` BG_COLOR]  
+`colorlover` `-c`|`--current`  
+`colorlover` `-l`|`--list`  
+`colorlover` `-v`|`--version`  
+`colorlover` `-h`|`--help`  
 
 DESCRIPTION
 -----------
@@ -265,31 +265,31 @@ get applied.
 
 OPTIONS
 -------
-`-f`|`--foreground` FG_COLOR 
+`-f`|`--foreground` FG_COLOR  
 Sets the foreground color to FG_COLOR.  
 FG_COLOR will also get applied to color7 and color15.
 FG_COLOR is a 6 character long hexadecimal colorcode.  
 
-`-b`|`--background` BG_COLOR
+`-b`|`--background` BG_COLOR  
 Sets the background color to BG_COLOR.  
 BG_COLOR will also get applied to color0 and color8.
 BG_COLOR is a 6 character long hexadecimal colorcode.  
 
-`-r`|`--random`
+`-r`|`--random`  
 If set a 6 digit ID number will get generated and
 the palette with that ID will get downloaded, set
 and saved.  
 
-`-c`|`--current`
+`-c`|`--current`  
 Prints the path to the last set theme to `stdout`  
 
-`-l`|`--list`
+`-l`|`--list`  
 Prints a list of the content of *COLOR_LOVER_DIR*  
 
-`-v`|`--version`
+`-v`|`--version`  
 Print version and exit.  
 
-`-h`|`--help`
+`-h`|`--help`  
 Print help (this) and exit.  
 
 
@@ -310,7 +310,7 @@ COLOR_LOVER_DIR
 Directory where themes get saved to.  
 Default: *$HOME/.config/colorlover*  
 
-COLOR_LOVER_TMP_FILE
+COLOR_LOVER_TMP_FILE  
 Temporary file where the top palettes get downloaded to.  
 Defaul: /tmp/cl`YY-MM-DD`.xml  
 
