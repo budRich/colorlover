@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 __name="colorlover"
-__version="0.004"
+__version="0.005"
 __author="budRich"
 __contact='robstenklippa@gmail.com'
 __created="2018-08-25"
@@ -238,7 +238,7 @@ about='`"colorlover"` - Get palettes from colourlovers.com
 
 SYNOPSIS
 --------
-`colorlover` [`-f`|`--foreground` FG_COLOR] [`-b`|`--background` BG_COLOR] [ID|URL|THEME]  
+`colorlover` [`-f`|`--foreground` FG_COLOR] [`-b`|`--background` BG_COLOR] [ID|URL|PALETTE]  
 `colorlover` `-r`|`--random` [`-f`|`--foreground` FG_COLOR] [`-b`|`--background` BG_COLOR]  
 `colorlover` `-c`|`--current`  
 `colorlover` `-l`|`--list`  
@@ -255,8 +255,8 @@ file doesn'"'"'t exist. A random PALETTE from the
 downloaded file will be generated, set and saved
 to *COLOR_LOVER_DIR/PALETTE*.  
 
-if the last argument is a url to a  palette or a 6
-digit number, that  palette will get downloaded  
+if the last argument is a URL to a  palette or a 6
+digit ID number, that palette will get downloaded.  
 
 if the last argument is the name of a PALETTE
 already in *COLOR_LOVER_DIR*, that PALLETTE will
