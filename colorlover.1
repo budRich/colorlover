@@ -1,0 +1,112 @@
+.TH COLORLOVER 1 2018\-08\-25 Linux "User Manuals"
+.SH NAME
+.PP
+\fB\fC"colorlover"\fR \- Get palettes from colourlovers.com
+
+.SH SYNOPSIS
+.PP
+\fB\fCcolorlover\fR [\fB\fC\-f\fR|\fB\fC\-\-foreground\fR FG\_COLOR] [\fB\fC\-b\fR|\fB\fC\-\-background\fR BG\_COLOR] [ID|URL|THEME]
+\fB\fCcolorlover\fR \fB\fC\-r\fR|\fB\fC\-\-random\fR [\fB\fC\-f\fR|\fB\fC\-\-foreground\fR FG\_COLOR] [\fB\fC\-b\fR|\fB\fC\-\-background\fR BG\_COLOR]
+\fB\fCcolorlover\fR \fB\fC\-c\fR|\fB\fC\-\-current\fR
+\fB\fCcolorlover\fR \fB\fC\-l\fR|\fB\fC\-\-list\fR
+\fB\fCcolorlover\fR \fB\fC\-v\fR|\fB\fC\-\-version\fR
+\fB\fCcolorlover\fR \fB\fC\-h\fR|\fB\fC\-\-help\fR
+
+.SH DESCRIPTION
+.PP
+If \fB\fCcolorlover\fR is executed without arguments
+(except options) the  current top palettes will
+get  downloaded to \fICOLOR\_LOVER\_TMP\_FILE\fP, if the
+file doesn't exist. A random PALETTE from the
+downloaded file will be generated, set and saved
+to \fICOLOR\_LOVER\_DIR/PALETTE\fP\&.
+
+.PP
+if the last argument is a url to a  palette or a 6
+digit number, that  palette will get downloaded
+
+.PP
+if the last argument is the name of a PALETTE
+already in \fICOLOR\_LOVER\_DIR\fP, that PALLETTE will
+get applied.
+
+.SH OPTIONS
+.PP
+\fB\fC\-f\fR|\fB\fC\-\-foreground\fR FG\_COLOR
+Sets the foreground color to FG\_COLOR.
+.br
+FG\_COLOR will also get applied to color7 and color15.
+FG\_COLOR is a 6 character long hexadecimal colorcode.
+
+.PP
+\fB\fC\-b\fR|\fB\fC\-\-background\fR BG\_COLOR
+Sets the background color to BG\_COLOR.
+.br
+BG\_COLOR will also get applied to color0 and color8.
+BG\_COLOR is a 6 character long hexadecimal colorcode.
+
+.PP
+\fB\fC\-r\fR|\fB\fC\-\-random\fR
+If set a 6 digit ID number will get generated and
+the palette with that ID will get downloaded, set
+and saved.
+
+.PP
+\fB\fC\-c\fR|\fB\fC\-\-current\fR
+Prints the path to the last set theme to \fB\fCstdout\fR
+
+.PP
+\fB\fC\-l\fR|\fB\fC\-\-list\fR
+Prints a list of the content of \fICOLOR\_LOVER\_DIR\fP
+
+.PP
+\fB\fC\-v\fR|\fB\fC\-\-version\fR
+Print version and exit.
+
+.PP
+\fB\fC\-h\fR|\fB\fC\-\-help\fR
+Print help (this) and exit.
+
+.SH FILES
+.PP
+Themes will get saved to \fICOLOR\_LOVER\_DIR/THEME\fP,
+and when a theme is set, a symbolic link to that theme
+will get created to: \fICOLOR\_LOVER\_DIR/.current\fP
+
+.PP
+Top palettes will get downloaded to \fICOLOR\_LOVER\_TMP\_FILE\fP
+if the file doesn't exist.
+
+.SH ENVIRONMENT
+.PP
+COLOR\_LOVER\_DIR
+.br
+Directory where themes get saved to.
+.br
+Default: \fI$HOME/.config/colorlover\fP
+
+.PP
+COLOR\_LOVER\_TMP\_FILE
+Temporary file where the top palettes get downloaded to.
+.br
+Defaul: /tmp/cl\fB\fCYY\-MM\-DD\fR\&.xml
+
+.SH DEPENDENCIES
+.PP
+bash>4
+.br
+gawk
+.br
+getopt
+
+.SH AUTHOR
+.PP
+budRich 
+\[la]robstenklippa@gmail.com\[ra]
+
+\[la]https://budrich.github.io\[ra]
+
+.SH SEE ALSO
+.PP
+bar(1), foo(5), xyzzy(1), Linux Man Page Howto
+\[la]http://www.schweikhardt.net/man_page_howto.html\[ra]
